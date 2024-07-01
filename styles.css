@@ -1,0 +1,215 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ /* Body Styling */
+ body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background: url('images/15518074_5594016.jpg') no-repeat center center/cover;
+    color: #333;
+ }
+ /* Container */
+ .container {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+ }
+ /* Header Styling */
+ header {
+    background: url('images/15518074_5594016.jpg') no-repeat center center/cover;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #01395e;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+ }
+ header img {
+    border-color:#01395e ;
+    border: solid 2px;
+    margin: 0;
+    color: #01395e;
+    font-weight: 700;
+    width: 150px;
+ }
+ header nav {
+    text-align: right;
+ }
+ header ul {
+    list-style: none;
+ }
+ header li {
+    display: inline;
+    padding: 0 20px;
+ }
+ header a {
+    color: #333;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: color 0.3s ease;
+ }
+ header a:hover {
+    color: #01395e;
+ }
+ /* Showcase Section */
+ .showcase {
+    min-height: 400px;
+    background: url('images/image.png') no-repeat center center/cover;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3); /* Fallback color */
+    background-blend-mode: multiply;
+    padding: 20px;
+ }
+ .showcase h1 {
+    font-size: 55px;
+    margin-bottom: 10px;
+ }
+ .showcase p {
+    font-size: 20px;
+ }
+ /* Main Content Section */
+ .main-content {
+    padding: 20px 0;
+ }
+ .content-section {
+    padding: 20px;
+    margin: 20px 0;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ }
+ .content-section h2 {
+    margin-top: 0;
+    color: #01395e;
+ }
+ .content-section ul {
+    list-style: disc inside;
+    padding-left: 20px;
+ }
+ .content-section ul li {
+    margin-bottom: 10px;
+ }
+ form {
+    display: flex;
+    flex-direction: column;
+ }
+ form label {
+    margin: 10px 0 5px;
+    color: #333;
+ }
+ form input, form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+ }
+ form button {
+    padding: 10px;
+    background: #01395e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+ }
+ form button:hover {
+    background: #012745;
+ }
+ /* Footer */
+ footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    border-top: 3px solid #01395e;
+ }
+ /* Responsive Design */
+ @media (max-width: 768px) {
+    header nav {
+        text-align: center;
+    }
+    header ul {
+        padding: 0;
+    }
+    header li {
+        display: block;
+        padding: 10px 0;
+    }
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+    .showcase h1 {
+        font-size: 40px;
+    }
+    .showcase p {
+        font-size: 18px;
+    }
+    .content-section {
+        padding: 10px;
+        margin: 10px 0;
+    }
+ }
+ @media (max-width: 480px) {
+    .showcase h1 {
+        font-size: 30px;
+    }
+    .showcase p {
+        font-size: 16px;
+    }
+ }
+ /* Landscape Orientation */
+ @media (orientation: landscape) and (max-width: 1024px) {
+    
+    header{padding-top:5px ;
+            padding-bottom: 2px};
+    header img {
+        width: fit-content;
+    }
+    header nav {
+        text-align: center;
+    }
+    header li {
+        display: inline-block;
+        padding: 5px 0;
+    }
+    .showcase {
+        min-height: 300px;
+    }
+    .showcase h1 {
+        font-size: 35px;
+    }
+    .showcase p {
+        font-size: 16px;
+    }
+    .containerheader {
+        display:inline-flex;
+         height: 100px;
+        width: 95%;
+        max-width: none;
+        padding: 0px 15px ;
+    }
+    .container {
+        width: 95%;
+        max-width: none;
+        padding: 0 10px;
+    }
+    form input, form textarea {
+        font-size: 14px;
+    }
+    form button {
+        font-size: 14px;
+    }
+ }
