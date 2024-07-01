@@ -19,3 +19,23 @@ ${name}`
    const mailtoLink = `mailto:emilie.goyard@facilit-e.fr?subject=${subject}&body=${encodeURIComponent(body)}`;
    window.location.href = mailtoLink;
 });
+if (localStorage.getItem('visitCount')) {
+   // Incrémenter le compteur de visites
+   localStorage.setItem('visitCount', Number(localStorage.getItem('visitCount')) + 1);
+} else {
+   // Initialiser le compteur de visites
+   localStorage.setItem('visitCount', 1);
+}
+
+// Mettre à jour le compteur de visites dans le footer
+document.getElementById('visit-counter').innerText = localStorage.getItem('visitCount');
+//Toggle
+document.addEventListener("DOMContentLoaded", function () {
+   const menuToggle = document.querySelector(".menu-toggle");
+   const nav = document.querySelector("header nav");
+
+   menuToggle.addEventListener("click", function () {
+       menuToggle.classList.toggle("active");
+       nav.classList.toggle("active");
+   });
+});

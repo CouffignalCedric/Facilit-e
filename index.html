@@ -4,22 +4,28 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Facilit-E - Assistante Administrative Indépendante</title>
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles2.css">
 </head>
 <body>
-<header>
-<div class="containerheader">
-    <img clas ="logo"src="images/logo.png" alt="">
+    <header>
+        <div class="containerheader">
+            <img class="logo" src="images/logo.png" alt="Logo Facilit-E">
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">À Propos</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        </header>
 
-<nav>
-<ul>
-<li><a href="#about">À Propos</a></li>
-<li><a href="#services">Services</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-</nav>
-</div>
-</header>
+    
 <section class="showcase">
 <div class="container">
 <h1>Assistante Administrative Indépendante</h1>
@@ -80,6 +86,7 @@
 </section>
 <footer>
 <p>Facilit-E &copy; 2024</p>
+<p>Nombre de visites: <span id="visit-counter">0</span></p>
 </footer>
 <script src="scripts.js"></script>
 </body>
